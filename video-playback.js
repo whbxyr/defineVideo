@@ -1,6 +1,7 @@
 (function (window, document) {
   var video = document.getElementsByTagName('video')[0];
-  var play = document.getElementById('play');
+  var videoControl = document.getElementsByClassName('video-control')[0];
+  var play = videoControl.getElementsByClassName('play')[0];
 
   var videoObject = {
     init: function () {

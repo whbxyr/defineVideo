@@ -1,2 +1,12 @@
-var video = document.getElementsByTagName('video')[0];
-video.style.cssText = 'position: fixed; width:' + window.innerWidth + 'px; height: ' + window.innerHeight + 'px;';
+(function (window, document) {
+  var video = document.getElementsByTagName('video')[0];
+  var play = document.getElementById('play');
+
+  var videoObject = {
+    init: function () {
+      video.removeAttribute('controls');
+    }
+  };
+
+  videoObject.init();
+})(this, document);

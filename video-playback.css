@@ -2,27 +2,21 @@
   margin: 0;
   padding: 0;
 }
-
 html, body {
-  /*width: 100%;*/
-  min-width: 650px;
+  width: 100%;
   height: 100%;
 }
-
 #video-container {
   width: 100%;
-  min-width: 650px;
   height: 100%;
   position: relative;
 }
-
 #video-container video {
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: fill;
 }
-
 .video-control {
   width: 100%;
   height: 32px;
@@ -40,12 +34,14 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
+  cursor: pointer;
 }
 .video-control .progress {
   width: 55%;
   height: 32px;
-  position: absolute;
-  left: 50px;
+  margin-left: 45px;
+  vertical-align: top;
+  display: inline-block;
   background-color: #3c3c3c;
 }
 .video-control .progress .progress-box {
@@ -55,21 +51,35 @@ html, body {
   background-color: #777;
   margin: 11px auto;
 }
-.video-control .progress .progress-box .play_progress {
-  display: block;
+.video-control .progress .progress-box .play-progress {
+  display: inline-block;
   width: 50%;
   height: 10px;
   border-radius: 3px;
   background-color: #dfdfd0;
+  vertical-align: top;
+}
+.video-control .progress .progress-box .play-point {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: -8px;
+  margin-top: -2px;
+  vertical-align: top;
+  background-color: chartreuse;
+  cursor: pointer;
 }
 .video-control .time {
+  display: inline-block;
   height: 32px;
   line-height: 32px;
-  position: absolute;
-  top: 0;
-  right: 150px;
 }
 .video-control .time span {
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
   font-size: 14px;
   background-color: turquoise;
+  vertical-align: top;
 }

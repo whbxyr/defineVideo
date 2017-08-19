@@ -20,7 +20,7 @@ html, body {
 .video-control {
   width: 100%;
   height: 32px;
-  background-color: #f00;
+  background-color: #fafafa;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -28,27 +28,30 @@ html, body {
 .video-control .play {
   width: 32px;
   height: 32px;
+  background-image: url(./img/play.png);
   line-height: 32px;
   text-align: center;
-  background-color: #333;
   position: absolute;
   left: 0;
   top: 0;
   cursor: pointer;
 }
+.video-control .play:hover {
+  background-image: url(./img/hide.png);
+}
 .video-control .progress {
-  width: 55%;
+  width: 50%;
   height: 32px;
   margin-left: 45px;
   vertical-align: top;
   display: inline-block;
-  background-color: #3c3c3c;
+  cursor: pointer;
 }
 .video-control .progress .progress-box {
-  width: 90%;
+  width: 100%;
   height: 10px;
   border-radius: 3px;
-  background-color: #777;
+  background-color: #5a5a5a;
   margin: 11px auto;
 }
 .video-control .progress .progress-box .play-progress {
@@ -56,7 +59,7 @@ html, body {
   width: 50%;
   height: 10px;
   border-radius: 3px;
-  background-color: #dfdfd0;
+  background-color: #4285f4;
   vertical-align: top;
 }
 .video-control .progress .progress-box .play-point {
@@ -64,22 +67,72 @@ html, body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  margin-left: -8px;
+  margin-left: -16px;
   margin-top: -2px;
   vertical-align: top;
-  background-color: chartreuse;
+  background-color: #4285f4;
   cursor: pointer;
 }
 .video-control .time {
   display: inline-block;
   height: 32px;
   line-height: 32px;
+  margin-left: 40px;
 }
 .video-control .time span {
   height: 32px;
   line-height: 32px;
   display: inline-block;
-  font-size: 14px;
-  background-color: turquoise;
+  font-size: 12px;
   vertical-align: top;
+}
+.video-control .voice {
+  line-height: 0;
+  display: inline-block;
+  width: 150px;
+  height: 32px;
+  margin-left: 25px;
+  vertical-align: top;
+}
+.video-control .voice img {
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.video-control .voice .voice-ctn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: #5a5a5a;
+  vertical-align: top;
+}
+.video-control .voice .voice-ctn .voice-progress {
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #4285f4;
+  vertical-align: top;
+}
+.video-control .voice .voice-ctn .voice-point {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: -3px;
+  margin-left: -10px;
+  background-color: #4285f4;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.video-control .full-screen {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url(./img/full.png);
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
